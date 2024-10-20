@@ -60,5 +60,9 @@ export const {
         })
     ],
     secret: process.env.AUTH_SECRECT,
+
+
+    // add the trustHost 
+    trustHost: process.env.NODE_ENV === "development" ? true : false,
 })
 
